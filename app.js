@@ -1,4 +1,4 @@
-function kilo(){
+function Grams(){
     let kilograms = document.getElementById("weightInput").value;
     const grams = 1000;
     const ans = grams * kilograms;

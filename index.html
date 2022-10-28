@@ -8,22 +8,89 @@
     <title>Simple Converter</title>
 </head>
 <body>
-    <div class="d-flex flex-column flex-sm-row col-11 mx-auto my-5">
-        <div class="bg-primary flex-fill order-2 order-sm-1 p-3">
-    <h1>Weight Converter</h1>
-    <form action="#" method="">
-        <label for="weightInput">
-            Kilograms
+  
+    
+    
+        
+    <div class=" bg-primary  mx-auto my-5 p-3 w-50 p-3">
+       
+        <div class=" flex-fill  order-sm-1 ">
+            <span class="h4">Weight Converter</span>
+            <form action="#" method="">
+
+                <!-- <div class="flex-fill order-sm-3 p-3">
+                    <div class="d-grid d-md-block">
+                    <button onclick="Grams()" class="btn btn-danger" type="button">Grams</button>
+                    <button onclick="tons()" class="btn btn-danger" type="button">Tons</button>
+                    <button  onclick="Pounds()" class="btn btn-danger" type="button">Pounds</button>
+                    </div> 
+                 </div> -->
+
+                 <div class="input-group mb-3 w-100   flex-row mt-5 ">
+                    <span class="input-group-text bg-warning  text-danger">Kilograms</span>
+                    <div class="form-floating ">
+                      <input type="text" class="form-control" id="weightInput" placeholder="Enter Value">
+                      <label for="weightInput">Enter Value</label>
+                    </div>
+
+                   
+                        <div class="d-grid d-md-block my-auto ms-5">
+                        <button onclick="Grams()" class="btn btn-danger" type="button">Grams</button>
+                        <button onclick="tons()" class="btn btn-danger" type="button">Tons</button>
+                        <button  onclick="Pounds()" class="btn btn-danger" type="button">Pounds</button>
+                        </div>
+
+                 </div>
+                  
+              <!-- <div class="input-group mt-3 w-25  ">
+               
+              
+                
+                 <input type="number" class="form-control" id="weightInput" placeholder="Enter Value">
+                    <span class="input-group-text bg-warning ">Kilograms</span>
+                    <label for="weightInput"></label>
+                
+                  
+                </div>
+             
+             -->
+              
+              
+            </form>
+
+            <img src="https://img.icons8.com/glyph-neue/64/000000/down.png"/>
+
+
+            <div class="input-group mt-3 w-50 ">
+                <span class="input-group-text bg-warning flex-fill text-danger" id="displayUnit" >Kilograms</span>
+                <span class="input-group-text flex-fill" id="display">0</span>
+                
+               
+              </div>
+
+           <!-- <div class="bg-success flex-fill order-sm-3 p-3d-block p-2 border">
+            <h3 id="displayUnit">Kilo</h3>
+            <h3 id="display">0</h3>
+          </div>
+      -->
+        </div>
+
+        
+        </div>
+       
+      </form>
+      
+
+    
+        <!-- <label for="weightInput" class="form-label">
+           <h4>Kilograms</h4> 
         </label>
-        <input type="number" min="0" placeholder="Enter Value" id="weightInput">
-        <button onclick="kilo()">Grams</button>
-        <button onclick="tons()">Tons</button>
-        <button onclick="Pounds()">Pounds</button>
-    </form>
-    <h3 id="display">0</h3>
-    <h3 id="displayUnit">Kilo</h3>
-</div>
-    </div>
+        <input type="number" min="0" placeholder="Enter Value" id="weightInput" class="form-control"> -->
+
+       
+      
+
+
     <script src="./app.js"></script>
 </body>
 </html>
